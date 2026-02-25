@@ -71,13 +71,16 @@ img {
 
 
 .other-info {
-display: flex;
-gap: 5px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+
 }
 
 
 .other-info {
 
     background-color: grey;
-
+    margin-bottom: 0;
 }
