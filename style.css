@@ -11,173 +11,64 @@ body {
 }
 
 img {
-    width: 50%;
+    width: 100%;
     
 }
-.cars-wrapper {
-    max-width: 900px;
-    margin: auto;
-    border: 3px solid green;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-.card-box {
-   
-    background-color: aquamarine;
-    padding: 15px;
-    border-radius: 10px;
-    transition: 0.2s 
-   
-}
-.card-box:hover{
-transform: scale(1.03);
-box-shadow:0px 0px 10px 5px rgba(0,0,0,0.3) ;
-border-radius: 50px;
- opacity: 0.7;
-}
-
-.card-box.car-item1 {
-    grid-column: span 2;
-    
-   } 
-
-.card-box.car-item2 {
-    grid-column: span 2;
-    
-   }
-
-.card-box img, .card-box h2, .card-box p .card-box {
-    margin-bottom: 2opx;
-   
-}
-
-
-.card-box img {
-    
-    height: 150%;
-    object-fit: cover;
-}
-
-.image-price {
-    position: relative;
-    
-}
-
-.image-price .price {
-    position: relative;
-    bottom: 10px;
-    right: 10px;
-    font-weight: bold;
-    background-color: yellow;
-    color: red;
-    padding: 5px;
-}
-
-.price::after {
- content:" €";
- display: inline-block;
- margin-left: 5px;
-}
-
-
-.other-info {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr); 
-    margin-bottom: 20px;
-
-}
-
-.other-info {
-
-    background-color: grey;
-    margin-bottom: 0;
-    padding: 3px;
-}
-
-
-.moja-forma {
-    max-width: 500px;
-    margin: auto;
-    display: table-footer-group;
-    flex-direction: column-reverse;
-    gap: 20px;
+.height100 {
+    height: 100vh;
     padding: 100px;
 }
 
 
-.moja-forma input:focus {
-    outline: none;
-    font: size 20px;
+.hero {
+    
+    background-color: aquamarine;
+}
+.one-more-section {
+    
+    background-color: bisque;
 
 }
 
-.moja-forma button:active {
-    transform: scale (0.9);
+.one-more-section {
+
+background-color: burlywood;
+
 }
 
-
-nav a:visited {
-    color: red  
-}
-
-ul{
-    max-width: 300px;
-    margin:auto;
-    list-style: none;
-
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    animation: rotateBox;
+    animation-timeline: view()
     
 }
 
-ul li {
+@keyframes rotateBox {
+        0% {
+            transform: rotate(0deg) scale (0.3);
+    }
+        100% {
+            transform: rotate(360deg)scale(2);
 
-    font-size: 28px;
+        }
+}
+.textAnimation {
+    text-align: center;
+    font-size: 50px;
+    animation: fadeInText;
+    animation-timeline: view ();
 
 }
 
-
-ul li::before{
-    content:"⭐";
-    margin: right 10px;
-    font: size 20px;
-}
-
-
-
-.animacija-vjezba {
-        width: 200px;
-        height: 200px;
-        background-color: coral;
-        margin: 30px auto;
-         animation-name: cool-animacija;  
-         animation-duration: 2s;
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+100%{
+    opacity: 1;
 
 }
-
- @keyframes  cool-animacija {
-         0% {
-            border-radius: 0;
-            transform: rotate(0);
-         }
-        25% {
-            border-radius: 50% 0 0 0;
-            transform: rotate(45deg);
-        }
-        
-        50% {
-
-        }
-        75%{
-
-        }
-        100%{
-
-        }
-
-
-            }
-       
-
-
+}
