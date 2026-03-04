@@ -11,64 +11,44 @@ body {
 }
 
 img {
-    width: 100%;
-    
-}
-.height100 {
-    height: 100vh;
-    padding: 100px;
+    width: 100%;  
+
 }
 
+.height100 {
+height: 100vh;
+padding: 100px;
+}
+    
 
 .hero {
-    
-    background-color: aquamarine;
-}
-.one-more-section {
-    
-    background-color: bisque;
+background-color: aquamarine;
 
 }
 
-.one-more-section {
+.another-section {
+background-color: bisque;
 
+}
+
+.one-more-section {
 background-color: burlywood;
 
 }
 
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    margin: auto;
-    animation: rotateBox;
-    animation-timeline: view()
-    
+width: 200px;
+background-color: red;
+margin: auto;
+animation: rotateBox 2s;
 }
 
 @keyframes rotateBox {
-        0% {
-            transform: rotate(0deg) scale (0.3);
-    }
-        100% {
-            transform: rotate(360deg)scale(2);
-
-        }
+0% {
+transform: rotate(0deg);
 }
-.textAnimation {
-    text-align: center;
-    font-size: 50px;
-    animation: fadeInText;
-    animation-timeline: view ();
-
-}
-
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-    }
-100%{
-    opacity: 1;
+100% {
+transform: rotate(360deg);
 
 }
 }
