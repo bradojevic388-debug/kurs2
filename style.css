@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, ; 
+    font-family: Arial,  sans-serif;
     
 }
 
@@ -36,19 +36,26 @@ background-color: burlywood;
 
 }
 
-.box {
-width: 200px;
-background-color: red;
-margin: auto;
-animation: rotateBox 2s;
+
+.box{
+width:200px;
+height:200px;
+background:red;
+margin:auto;
+
+/* animacija */
+animation-name: rotateBox;
+animation-duration: 1s;
+animation-timeline: view();
+animation-range: entry 0% cover 50%;
 }
 
-@keyframes rotateBox {
-0% {
+@keyframes rotateBox{
+from{
 transform: rotate(0deg);
 }
-100% {
-transform: rotate(360deg);
 
+to{
+transform: rotate(360deg);
 }
 }
