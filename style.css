@@ -5,4 +5,47 @@ box-sizing: border-box;
 
 }
 
+body
 
+{
+    font-family: arial
+}
+
+a {
+text-decoration: none;
+color
+:black
+
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+header{
+    padding: 16px 0;
+}
+
+.container-fluid {
+
+    padding: 0 64px;
+    margin: auto;
+}
+
+.inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+header .container-fluid .inner-wrapper nav{
+display:flex;
+gap: 20px;
+
+
+}
