@@ -37,6 +37,7 @@ header{
 .container {
 max-width: 1000px;
 margin: auto;
+padding: 0 10px;
 }
 
 
@@ -53,7 +54,7 @@ margin: auto;
 header .container-fluid .inner-wrapper nav{
 display:flex;
 gap: 20px;
-
+border: 1px solid red;
 
 }
 
@@ -101,9 +102,10 @@ position: relative;
 display: flex;
 flex-direction: column;
 gap: 30px;
-max-width: 768px;
+max-width: 600px;
 margin: auto;
 position: relative;
+border: 1px solid red;
 
 }
 
@@ -124,3 +126,19 @@ display: flex;
 gap: 30px;
 margin-top: 40px;
 }
+
+.service-box {
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: gray;
+padding: 10px;
+}
+
+.service-box img {
+margin: auto;
+
+
+}
+
+
